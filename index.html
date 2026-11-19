@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#131313">
+  <meta name="description" content="Pizza napolitana artesanal horneada con leña en San Pedro Sula. Masa de fermentación lenta, ingredientes italianos y sabor auténtico.">
+  <title>FORNO ROSSO — Pizza artesanal de fuego vivo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Forno Rosso, inicio">
+      <span class="brand-mark" aria-hidden="true">FR</span>
+      <span class="brand-copy"><strong>FORNO ROSSO</strong><small>San Pedro Sula</small></span>
+    </a>
+    <button class="icon-button menu-toggle" id="menuToggle" aria-label="Abrir navegación" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+      <a class="nav-link active" href="#inicio">Inicio</a><a class="nav-link" href="#menu">Menú</a><a class="nav-link" href="#filosofia">Nuestra historia</a><a class="nav-link" href="#reservas">Reservaciones</a>
+    </nav>
+    <div class="header-actions"><span class="currency">HNL <i>· L.</i></span><button class="icon-button cart-trigger" id="openCart" aria-label="Abrir carrito"><svg class="bag-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 8h14l-1.2 12H6.2L5 8Z"/><path d="M8.5 8a3.5 3.5 0 0 1 7 0"/></svg><span class="cart-count" id="cartCount">0</span></button><a class="button button-primary button-small" href="#menu">Pedir ahora <span aria-hidden="true">↗</span></a></div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-image" role="img" aria-label="Pizza napolitana recién salida del horno de leña"></div><div class="hero-shade"></div>
+      <div class="hero-content wrap">
+        <p class="eyebrow"><span class="ember"></span> PIZZA NAPOLITANA · FUEGO VIVO</p>
+        <h1>El arte de la pizza,<br><em>hecho con fuego.</em></h1>
+        <p class="hero-lede">Masa viva, ingredientes excepcionales y el calor inconfundible de nuestro horno de leña. Italia se disfruta mejor alrededor de una mesa.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#menu">Descubrir el menú <span aria-hidden="true">↗</span></a><a class="text-link" href="#filosofia">Nuestra filosofía <span aria-hidden="true">↓</span></a></div>
+        <div class="hero-note"><span class="note-line"></span><span>FERMENTACIÓN LENTA DE 48 HORAS</span><span class="note-line"></span></div>
+      </div>
+      <div class="hero-side-label">SAN PEDRO SULA · HONDURAS</div>
+      <a class="scroll-cue" href="#menu" aria-label="Desplazar al menú"><span></span></a>
+    </section>
+
+    <section class="intro-strip"><div class="wrap intro-grid"><div><span class="micro-label">NUESTRA PROMESA</span><p>Tradición napolitana.<br><em>Un toque de nuestra casa.</em></p></div><div class="intro-detail"><span class="detail-icon">✳</span><p>Harina italiana, tomates San Marzano y mozzarella fresca. Cada pizza nace de ingredientes honestos y del respeto por el tiempo.</p></div><div class="rating"><span class="stars">★★★★★</span><strong>4.9 <small>/ 5</small></strong><span class="micro-label">AMADOS EN SAN PEDRO</span></div></div></section>
+
+    <section class="menu-section section-space" id="menu">
+      <div class="wrap">
+        <div class="section-heading"><div><span class="eyebrow gold">LA CARTA</span><h2>Del horno <em>a la mesa.</em></h2></div><p>Una carta corta, pensada con intención.<br>Elige tu próxima favorita.</p></div>
+        <div class="menu-toolbar"><div class="category-filters" id="categoryFilters" role="group" aria-label="Filtrar por categoría"></div><span class="menu-currency">PRECIOS EN LEMPIRAS <span>·</span> HNL</span></div>
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+        <div class="menu-foot"><span class="menu-foot-rule"></span><p>¿Tienes una pregunta sobre alérgenos o ingredientes? <a href="#contacto">Conversemos <span aria-hidden="true">↗</span></a></p><span class="menu-foot-rule"></span></div>
+      </div>
+    </section>
+
+    <section class="craft-section" id="filosofia"><div class="craft-photo"></div><div class="craft-copy"><span class="eyebrow gold">EL TIEMPO ES UN INGREDIENTE</span><h2>La paciencia<br>también <em>se hornea.</em></h2><p>Dejamos que nuestra masa repose 48 horas para alcanzar una textura ligera, aireada y llena de carácter. Después, el fuego hace lo suyo: 450 °C, unos segundos y toda una tradición en cada borde.</p><div class="craft-facts"><div><strong>48<span>h</span></strong><small>FERMENTACIÓN LENTA</small></div><div><strong>450<span>°C</span></strong><small>HORNO DE LEÑA</small></div><div><strong>90<span>s</span></strong><small>FUEGO Y TRANSFORMACIÓN</small></div></div><a class="text-link" href="#reservas">Ven a vivirlo <span aria-hidden="true">↗</span></a></div></section>
+
+    <section class="reservation-section section-space" id="reservas"><div class="wrap reservation-grid"><div class="reservation-copy"><span class="eyebrow gold">UNA MESA TE ESPERA</span><h2>Las mejores noches<br>empiezan <em>alrededor.</em></h2><p>Para una cena íntima o una mesa llena de amigos, reserva tu lugar y nosotros ponemos el fuego.</p><div class="contact-lines"><div><span>HORARIO</span><strong>Mar — Dom · 12:00 — 22:00</strong></div><div><span>ENCUÉNTRANOS</span><strong>San Pedro Sula, Honduras</strong></div></div></div><form class="reservation-form" id="reservationForm"><div class="form-heading"><span>RESERVACIONES</span><p>Cuéntanos cómo será tu visita.</p></div><label>Tu nombre<input name="name" autocomplete="name" placeholder="Nombre completo" required></label><div class="form-row"><label>Fecha<input name="date" type="date" required></label><label>Hora<select name="time" required><option value="">Seleccionar</option><option>12:00</option><option>13:00</option><option>14:00</option><option>18:00</option><option>19:00</option><option>20:00</option><option>21:00</option></select></label></div><div class="form-row"><label>Personas<select name="guests" required><option value="">Seleccionar</option><option>1 persona</option><option>2 personas</option><option>3 personas</option><option>4 personas</option><option>5 personas</option><option>6 personas</option><option>7+ personas</option></select></label><label>WhatsApp<input name="phone" autocomplete="tel" type="tel" placeholder="+504 0000 0000" required></label></div><button class="button button-primary form-submit" type="submit">Solicitar reservación <span aria-hidden="true">↗</span></button><p class="form-note">Confirmaremos tu mesa por WhatsApp.</p></form></div></section>
+
+    <section class="visit-section" id="contacto"><div class="wrap visit-grid"><div><span class="eyebrow gold">VEN A COMPARTIR</span><h2>Fuego, masa<br>y <em>buenas historias.</em></h2></div><div class="visit-address"><span>FORNO ROSSO · SAN PEDRO SULA</span><p>Horneado con pasión.<br>Servido con cariño.</p><a class="text-link" href="https://maps.google.com/?q=San+Pedro+Sula+Honduras" target="_blank" rel="noreferrer">Encuentra el camino <span aria-hidden="true">↗</span></a></div><a class="button button-outline" href="#reservas">Reserva una mesa <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="wrap footer-main"><a class="brand" href="#inicio"><span class="brand-mark" aria-hidden="true">FR</span><span class="brand-copy"><strong>FORNO ROSSO</strong><small>San Pedro Sula</small></span></a><p>La buena pizza sabe mejor<br>cuando se comparte.</p><div class="footer-links"><a href="#menu">Menú</a><a href="#reservas">Reservaciones</a><a href="#contacto">Contacto</a><a href="admin.html">Administración ↗</a></div></div><div class="wrap footer-bottom"><span>© <span id="year"></span> FORNO ROSSO · HECHO CON FUEGO</span><span>SAN PEDRO SULA, HONDURAS</span></div></footer>
+
+  <div class="drawer-backdrop" id="drawerBackdrop" hidden></div><aside class="cart-drawer" id="cartDrawer" aria-label="Tu pedido" aria-hidden="true"><div class="drawer-head"><div><span class="eyebrow gold">A TU GUSTO</span><h2>Tu pedido</h2></div><button class="icon-button close-drawer" id="closeCart" aria-label="Cerrar carrito">×</button></div><div class="cart-items" id="cartItems"></div><div class="cart-empty" id="cartEmpty"><span>✳</span><p>Tu mesa está esperando<br>por algo delicioso.</p><a class="text-link" href="#menu" id="emptyCartLink">Explorar menú ↗</a></div><form class="cart-summary" id="checkoutForm"><div class="subtotal"><span>Subtotal</span><strong id="cartTotal">L. 0</strong></div><div class="checkout-fields"><label>Nombre<input name="name" placeholder="Tu nombre" autocomplete="name" required></label><label>WhatsApp<input name="phone" placeholder="+504 0000 0000" type="tel" autocomplete="tel" required></label><label>Entrega<select name="fulfillment"><option value="delivery">A domicilio</option><option value="pickup">Recoger en el local</option></select></label><label id="addressField">Dirección<input name="address" placeholder="Colonia, calle y referencia" required></label></div><p>El costo de entrega se confirma al realizar el pedido.</p><button class="button button-primary checkout-button" type="submit">Continuar por WhatsApp <span aria-hidden="true">↗</span></button></form></aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
